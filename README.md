@@ -1,4 +1,7 @@
 
 # MERN (Shiva Concept Solutions Indore)
 
-Here i upload all the Projects and Assignment for MERN stack.
+Here I upload all the Projects and Assignments for the MERN stack.
+
+# To view live the Projects write after the -/[projectfoldername][filename]
+link:- https://aashishsva.github.io/MERN-shivaConceptSolution-/
