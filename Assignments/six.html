@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Write a program that transforms a numerical grade to a letter grade (e.g grade 10 should display “A”).
+
+        let grade = 95;
+        if (grade >= 90 && grade <= 100) {
+            letterGrade = "A";
+            document.write("Your Grade ", letterGrade);
+        } else if (grade >= 80 && grade < 90) {
+            letterGrade = "B";
+            document.write("Your Grade ", letterGrade);
+        } else if (grade >= 70 && grade < 80) {
+            letterGrade = "C";
+            document.write("Your Grade ", letterGrade);
+        } else if (grade >= 60 && grade < 70) {
+            letterGrade = "D";
+            document.write("Your Grade ", letterGrade);
+        } else if (grade < 60 && grade >= 0) {
+            letterGrade = "F";
+            document.write("Your Grade ", letterGrade);
+        } else {
+            letterGrade = "Invalid grade";  
+            document.write("Your Grade ", letterGrade);
+        }
+    </script>
+</body>
+</html>

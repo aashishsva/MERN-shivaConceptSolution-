@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One</title>
+</head>
+<body>
+    
+
+    <script>
+        // Wrtie a program to print a marksheet that takes five subjects marks as an input form the user and print the grade.
+        // 0-33 -D
+        // 33-45 -C
+        // 45-55 -B
+        // 55-65 -A
+        // 65 -100 -A+
+
+        let English = 45;
+        let Mathematics = 65;
+        let Physics = 80;
+        let Chemistry = 75;
+        let Biology = 85;
+
+        let totalMarks = English + Mathematics + Physics + Chemistry + Biology;
+        let averageMarks = totalMarks / 5;
+        let grade;
+        
+        if (averageMarks >= 0 && averageMarks <= 33) {
+            grade = 'D';
+            document.write('Grade: ', grade);
+        }
+        else if (averageMarks >= 34 && averageMarks <= 45) {
+            grade = 'C';
+            document.write('Grade: ', grade);
+        }
+        else if (averageMarks >= 46 && averageMarks <= 55) {
+            grade = 'B';
+            document.write('Grade: ', grade);
+        }
+        else if (averageMarks >= 56 && averageMarks <= 65) {
+            grade = 'A';
+            document.write('Grade: ', grade);
+        }
+        else if (averageMarks >= 66) {
+            grade = 'A+';
+            document.write('Grade: ', grade);
+        }
+
+
+
+    </script>
+</body>
+</html>

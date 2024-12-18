@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ten</title>
+</head>
+<body>
+    <script>
+        //Write a program that calculates a discount based on the purchase amount.Prices equal or over 100 discount have a discount of 20. Prices equal or over 50 have a discount of 10. Otherwise discount is 0
+
+        let pricesAmount = 50;
+        let discount;
+
+        if(pricesAmount >= 100){
+            discount = 20;
+        }else if(pricesAmount >= 50){
+            discount = 10;
+        }else{
+            discount = 0;
+        }
+
+        let discountedPrice = pricesAmount - (pricesAmount * (discount / 100));
+        document.write('Discounted Price: ', discountedPrice.toFixed(2));
+
+
+    </script>
+</body>
+</html>
