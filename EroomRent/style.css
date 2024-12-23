@@ -1,0 +1,450 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 80px;
+  margin-right: 10px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+/* Navbar styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 15px;
+  font-weight: 500;
+  position: relative;
+}
+.navbar a:hover{
+    color: orange;
+    transition: 0.2s;
+}
+
+.navbar .dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* Place below the parent link */
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1000;
+  margin-bottom: 5px;
+}
+
+
+.dropdown-content a {
+    margin-block: 5px;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.contact-info {
+  font-weight: bold;
+  color: #ff7a00;
+}
+
+.main-content {
+  height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.form-section {
+  flex: 1;
+  text-align: left; /* Align form content to the left */
+  padding-right: 20px; /* Add spacing between form and image */
+}
+
+.form-section h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.search-form select,
+.search-form button {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-form button {
+  background-color: #ff7a00;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #e66a00;
+}
+
+.image-section {
+  flex: 1;
+  text-align: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px; /* Restrict image height */
+}
+
+.working-progress {
+  height: 80vh;
+  position: relative;
+  text-align: center;
+  padding: 50px 20px;
+  margin-block: 10px;
+  background-color: #f9f9f9;
+  overflow: hidden; /* Ensures no child elements overflow */
+}
+
+.working-progress::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://eroomrent.in/img/source/world.png"); /* Replace with your map image URL */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2; /* Adjust this value for desired opacity */
+  z-index: 1;
+}
+
+.working-progress h2,
+.working-progress p,
+.cards-container {
+  position: relative;
+  z-index: 2;
+  /* margin-block: 30px; */
+}
+
+.working-progress h2{
+    font-weight: 50;
+    color: orange;
+    font-size: 0.9rem;
+    margin-block: 10px;
+}
+.working-progress span{
+    font-size: 2rem;
+    color: #999;
+    margin-block: 10px;
+}
+
+.working-progress p{
+    font-size: 1rem;
+    color: #666;
+    margin-block: 10px;
+    margin-bottom: 50px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  flex: 1;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background-color: #ffe7d9;
+  padding: 10px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.why-choose-us {
+  height: 80vh;
+  position: relative;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://eroomrent.in/img/source/home10.jpg"); /* Replace with your background image URL */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.why-choose-us::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white overlay */
+  z-index: 1;
+}
+
+.why-choose-us-content {
+  position: relative;
+  z-index: 2; /* Ensures content is above the overlay */
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: left;
+}
+
+.why-choose-us-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.why-choose-us-content p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.why-choose-us-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-choose-us-content li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.why-choose-us-content li span {
+  color: #ff7a00;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.kangaroo-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kangaroo-container .powered-text {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #757272;
+}
+
+.kangaroo-container .logo {
+  width: 350px;
+  height: auto;
+}
+
+footer {
+  background-image: url("https://eroomrent.in/img/source/footer.png");
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: #fff;
+  
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+}
+
+/* Logo Section */
+.logo-section {
+  flex: 1 1 20%;
+  text-align: center;
+}
+
+.logo-section img {
+  max-width: 100px;
+  margin-bottom: 10px;
+  margin-left: 35%;
+}
+
+.logo-section .tagline {
+  font-size: 14px;
+  color: #ffcc00;
+  margin-top: 10px;
+}
+
+/* Find Section */
+.find-section,
+.quick-links-section,
+.social-section,
+.app-section {
+  flex: 1 1 15%;
+}
+
+.find-section h4,
+.quick-links-section h4,
+.social-section h4,
+.app-section h4 {
+  font-size: 16px;
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.find-section ul,
+.quick-links-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.find-section ul li a,
+.quick-links-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.find-section ul li a:hover,
+.quick-links-section ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Social Links */
+.social-icons a img {
+  width: 30px;
+  margin: 0 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.1);
+}
+
+/* App Section */
+.app-section a img {
+  max-width: 150px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .logo-section {
+    margin-bottom: 20px;
+  }
+}
