@@ -1,4 +1,4 @@
-/* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,8 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
 }
 
 .header {
@@ -33,6 +34,7 @@ nav {
   align-items: center;
   padding: 10px 20px;
 }
+
 /* Navbar styling */
 .navbar {
   display: flex;
@@ -60,7 +62,7 @@ nav {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%; /* Place below the parent link */
+  top: 100%; 
   left: 0;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -111,8 +113,8 @@ nav {
 
 .form-section {
   flex: 1;
-  text-align: left; /* Align form content to the left */
-  padding-right: 20px; /* Add spacing between form and image */
+  text-align: left; 
+  padding-right: 20px; 
 }
 
 .form-section h1 {
@@ -157,7 +159,7 @@ nav {
 .image-section img {
   max-width: 100%;
   height: auto;
-  max-height: 400px; /* Restrict image height */
+  max-height: 400px; 
 }
 
 .working-progress {
@@ -167,7 +169,7 @@ nav {
   padding: 50px 20px;
   margin-block: 10px;
   background-color: #f9f9f9;
-  overflow: hidden; /* Ensures no child elements overflow */
+  overflow: hidden; 
 }
 
 .working-progress::before {
@@ -177,11 +179,11 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("https://eroomrent.in/img/source/world.png"); /* Replace with your map image URL */
+  background-image: url("https://eroomrent.in/img/source/world.png"); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.2; /* Adjust this value for desired opacity */
+  opacity: 0.2; 
   z-index: 1;
 }
 
@@ -190,7 +192,6 @@ nav {
 .cards-container {
   position: relative;
   z-index: 2;
-  /* margin-block: 30px; */
 }
 
 .working-progress h2{
@@ -257,7 +258,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("https://eroomrent.in/img/source/home10.jpg"); /* Replace with your background image URL */
+  background-image: url("https://eroomrent.in/img/source/home10.jpg"); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -270,13 +271,13 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.8); /* Transparent white overlay */
+  background-color: rgba(255, 255, 255, 0.8); 
   z-index: 1;
 }
 
 .why-choose-us-content {
   position: relative;
-  z-index: 2; /* Ensures content is above the overlay */
+  z-index: 2; 
   background: #fff;
   padding: 30px 40px;
   border-radius: 10px;
@@ -432,7 +433,7 @@ footer {
   margin: 0;
 }
 
-/* Responsive Design */
+/* Responsive Design for footer */
 @media screen and (max-width: 768px) {
   .footer-container {
     flex-direction: column;
