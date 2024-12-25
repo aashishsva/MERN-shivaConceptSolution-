@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+nav{
+    padding: 30px;
+}
+nav .logo span{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 5px;
+    padding-top: 10px;
+    color: blue;
+}
+
+.search_container{
+    i{
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    input{
+        padding: 10px;
+        width: 200px;
+        border: 1px solid #3333;
+        border-radius: 5px;
+    }
+}
+
+.profile{
+    i{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    img{
+        margin-left: 10px;
+    }
+    span{
+        margin-left: 10px;
+        font-weight: 500;
+    }
+}
+.profile img{
+    border-radius: 50%;
+     width: 50px;
+}
+
+.aside{
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    
+}
+
+.aside ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.aside ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+.aside ul li a:hover{
+   color: #660bf9c3;
+}
