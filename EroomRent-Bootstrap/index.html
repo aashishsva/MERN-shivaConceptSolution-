@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eRoomRent Layout</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 8px;
+  }
+  .hero img {
+    width: 300px;
+  }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background: #333;
+      color: white;
+      padding: 20px 0;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">eRoomRent</a>
+  
+      <!-- Navbar Toggler for Mobile View -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar Links and Contact -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Centered Links -->
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Listings</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        </ul>
+  
+        <!-- Contact Button -->
+        <div class="d-flex">
+          <a href="#contact" class="btn btn-primary">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+
+
+<!-- Hero Section -->
+<div class="hero py-5">
+    <div class="container">
+      <div class="row align-items-center ">
+        <!-- Left: Form -->
+        <div class="col-md-6">
+          <h1 class="display-5">Find Your Perfect Rental</h1>
+          <p>Search for the best rooms and apartments near you.</p>
+          <form class="row g-3">
+            <div class="col-md-12">
+              <label for="location" class="form-label">Location</label>
+              <input type="text" class="form-control" id="location" placeholder="Enter Location">
+            </div>
+            <div class="col-md-12">
+              <label for="propertyType" class="form-label">Property Type</label>
+              <select class="form-select" id="propertyType">
+                <option selected>Choose...</option>
+                <option value="1">Apartment</option>
+                <option value="2">Villa</option>
+                <option value="3">Studio</option>
+              </select>
+            </div>
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-primary w-50">Search</button>
+            </div>
+          </form>
+        </div>
+  
+        <!-- Right: Image -->
+        <div class="col-md-6">
+          <img src="https://eroomrent.in/img/source/tourist.png" class="img-fluid rounded " alt="Rental Property">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- Featured Listings -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Featured Listings</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Property">
+          <div class="card-body">
+            <h5 class="card-title">Cozy Apartment</h5>
+            <p class="card-text">2 BHK apartment in the city center.</p>
+            <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Property">
+          <div class="card-body">
+            <h5 class="card-title">Luxury Villa</h5>
+            <p class="card-text">Spacious villa with a private pool.</p>
+            <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Property">
+          <div class="card-body">
+            <h5 class="card-title">Studio Apartment</h5>
+            <p class="card-text">Affordable studio apartment for students.</p>
+            <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>About eRoomRent</h5>
+        <p>We help you find the best rental properties at affordable rates.</p>
+      </div>
+      <div class="col-md-6 text-end">
+        <h5>Follow Us</h5>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
