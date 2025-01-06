@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body class="bg-light">
+    <div class="container mt-5">
+      <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white text-center">
+          <h4>JavaScript Demo</h4>
+        </div>
+        <div class="card-body">
+          <div class="mb-4">
+            <h5 class="text-secondary">Languages</h5>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="language" id="java"/>
+              <label class="form-check-label" for="java">Java</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="language" id="php"/>
+              <label class="form-check-label" for="php">PHP</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="language" id="javascript"/>
+              <label class="form-check-label" for="javascript">JavaScript</label>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <h5 class="text-secondary">Skills</h5>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="c" id="c"/>
+              <label class="form-check-label" for="c">C</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="c++" id="c++"/>
+              <label class="form-check-label" for="c++">C++</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="dsa" id="dsa"/>
+              <label class="form-check-label" for="dsa">Data Structures and Algorithms</label>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <button class="btn btn-success btn-lg" onclick="showData()"> Show Data </button>
+          </div>
+
+          <div
+            class="data mt-4 p-3 border rounded bg-light"
+            id="data"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showData() {
+        let language = [];
+        let skill = [];
+
+        // Radio button logic 
+        if (document.getElementById("java").checked) {
+          language.push("Java");
+        }
+        if (document.getElementById("php").checked) {
+          language.push("PHP");
+        }
+        if (document.getElementById("javascript").checked) {
+          language.push("JavaScript");
+        }
+
+        // Checkbox logic 
+        if (document.getElementById("c").checked) {
+          skill.push("C");
+        }
+        if (document.getElementById("c++").checked) {
+          skill.push("C++");
+        }
+        if (document.getElementById("dsa").checked) {
+          skill.push("Data Structures and Algorithms");
+        }
+
+        // Display selected data
+        document.getElementById("data").innerHTML = `
+                <h5 class="text-primary">Selected Data:</h5>
+                <p><strong>Languages:</strong> ${language.join(", ")}</p>
+                <p><strong>Skills:</strong> ${skill.join(", ")}</p>
+            `;
+      }
+    </script>
+  </body>
+</html>
